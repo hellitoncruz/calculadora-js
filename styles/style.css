@@ -1,0 +1,82 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+body {
+    background-color: rgb(197, 197, 197);
+}
+
+table {
+    background-color: rgb(66, 65, 65);
+    padding: 10px;
+}
+
+form {
+    margin: 0;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%); 
+    box-shadow: 0px 0px 43px 17px rgb(243, 242, 242);
+}
+
+.display {
+    width: 238px;
+    height: 80px;
+    padding-right: 16px;
+    text-align: right;
+
+    font-size: 20px;
+    color: white;
+    outline: none;
+    
+    border: none;
+    background-color: rgb(66, 65, 65);
+}
+
+
+td {
+    background-color: rgb(53, 52, 52);
+}
+
+td .operator {
+    background-color: #302f2f;
+}
+
+td .number {
+    background-color: rgba(0, 0, 0, 0.603);
+}
+
+.operator, .number {
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	-o-appearance: none;
+	
+    width: 52px;
+    height: 50px;
+
+    font-size: 22px;
+    color: white;
+
+    border: none;
+    outline: none;
+    background-color: rgb(66, 65, 65);
+
+    transition: 400ms;
+}
+
+.operator:hover, .number:hover {
+    background-color: rgb(116, 114, 114);
+    border:1px solid rgba(255, 255, 255, 0.329);
+    transition: .5s ease-in-out;
+}
+
